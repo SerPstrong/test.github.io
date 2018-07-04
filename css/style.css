@@ -1,0 +1,589 @@
+.content {
+  margin: 0 auto;
+  max-width: 1140px; }
+
+/*header*/
+header {
+  height: 800px;
+  background: linear-gradient(90deg, #fd7228, #f3187b);
+  position: relative; }
+
+.header__menu-logo_logo {
+  background: url("../img/logo.svg");
+  width: 48px;
+  height: 40px; }
+  .header__menu-logo_logo a {
+    font-family: Dosis, sans-serif;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 24px;
+    text-decoration: none;
+    margin: 7px 0 0 50px;
+    text-transform: capitalize;
+    display: block; }
+
+.header__menu-logo {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px; }
+
+.header__menu-logo_menu {
+  display: flex; }
+  .header__menu-logo_menu a {
+    font-family: Roboto, sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: block;
+    padding: 12px 30px; }
+  .header__menu-logo_menu li:hover a {
+    background-color: #fff;
+    color: #000;
+    border-radius: 25px; }
+
+.header__content {
+  display: flex;
+  position: relative; }
+
+.header__content_block {
+  max-width: 56%;
+  z-index: 1; }
+
+.header__content_block_caption {
+  font-family: Dosis, sans-serif;
+  color: #ffffff;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 60px;
+  text-transform: capitalize;
+  margin-top: 151px; }
+
+.header__content_block_text {
+  font-family: Roboto, sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-top: 23px; }
+
+.header__content_phone {
+  background-image: url("../img/iphones.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 87%;
+  position: absolute;
+  width: 836px;
+  height: 571px;
+  right: 0;
+  top: 146px;
+  z-index: 0; }
+
+.header__content_block_list {
+  font-family: Roboto, sans-serif;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 24px;
+  background-image: url(../img/gal.png);
+  background-repeat: no-repeat;
+  background-position-y: 5px;
+  padding-left: 30px; }
+
+.header__content_block_button {
+  text-transform: capitalize;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Roboto, sans-serif;
+  color: #222222;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-top: 54px;
+  border-radius: 35px;
+  border-width: 5px;
+  border-color: black;
+  background-color: #ffffff;
+  padding: 13px 40px; }
+  .header__content_block_button:hover {
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+    color: #000; }
+
+/*/header*/
+/*select__setting*/
+.select__setting_block {
+  width: 30.3333%;
+  display: flex;
+  margin: 58px 42px 0 0; }
+  .select__setting_block:nth-child(3n) {
+    margin: 58px 0 0 0; }
+  .select__setting_block i {
+    font-size: 27px;
+    padding: 24px;
+    border: solid #eee 1px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    color: #f31f79;
+    height: 75px;
+    width: 75px; }
+
+.select__setting_main {
+  display: flex;
+  flex-wrap: wrap; }
+
+.select__setting_block_caption {
+  font-family: Dosis, sans-serif;
+  color: #222222;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px; }
+
+.select__setting_block_text {
+  font-family: Roboto, sans-serif;
+  color: #777777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-top: 20px; }
+
+.select__setting_main {
+  margin: 62px 0 100px 0; }
+
+.select__setting_block_captext {
+  margin-left: 25px; }
+
+.select__setting_line {
+  background-image: url("../img/line.png");
+  height: 2px; }
+
+/*/select__setting*/
+/*phone-present*/
+.phone-present {
+  background-image: url(../img/iphone.png);
+  background-repeat: no-repeat;
+  background-size: 1142px;
+  background-position: 2px 13px;
+  height: 712px; }
+
+.phone-present__content_text {
+  width: 50%;
+  float: right;
+  margin: 175px 0 0 0; }
+
+.phone-present__content_textes {
+  font-family: Roboto, sans-serif;
+  color: #777777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 23px 0 0 0; }
+
+.phone-present__content_textes_block {
+  margin: 79px 0 0 0; }
+
+.phone-present__content_text_caption {
+  font-family: Dosis, sans-serif;
+  color: #222222;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 30px; }
+
+.phone-present__content_text_gal {
+  margin: 17px 0 0 0; }
+
+.phone-present__content_text_gal_list {
+  font-family: Roboto, sans-serif;
+  display: inline-block;
+  color: #777;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 20px;
+  background-image: url(../img/galp.png);
+  background-repeat: no-repeat;
+  background-position-y: 5px;
+  padding-left: 30px; }
+
+/*/phone-present*/
+/*screenshots-slide*/
+.screenshots-slide__caption {
+  font-family: Dosis, sans-serif;
+  color: #222222;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+  padding-top: 120px; }
+
+.screenshots-slide__text {
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  color: #777777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-top: 40px;
+  max-width: 660px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.screenshots-slide {
+  height: 920px;
+  background-color: #f7fafc; }
+
+#carousel {
+  width: 1140px;
+  height: 500px;
+  position: relative;
+  clear: both;
+  overflow: hidden; }
+
+#carousel img {
+  visibility: hidden;
+  cursor: pointer; }
+
+.screenshots-slide__carusel {
+  position: relative;
+  margin: 80px 0 0 0; }
+
+#prev {
+  position: absolute;
+  top: 50%;
+  background-color: #fff;
+  padding: 11px;
+  border-radius: 50%;
+  border: solid #eee 1px; }
+  #prev:hover {
+    background: linear-gradient(90deg, #fd7228, #f3187b);
+    color: #fff; }
+
+#next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  background-color: #fff;
+  padding: 11px;
+  border-radius: 50%;
+  border: solid #eee 1px; }
+  #next:hover {
+    background: linear-gradient(90deg, #fd7228, #f3187b);
+    color: #fff; }
+
+/*/screenshots-slide*/
+/*price-block*/
+.price-block {
+  height: 900px; }
+
+.price-block__caption {
+  font-family: Dosis, sans-serif;
+  color: #222222;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 120px; }
+
+.price-block__text {
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  color: #777777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-top: 40px;
+  max-width: 660px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.price-block__all {
+  display: flex;
+  margin-top: 90px;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.price-block__select {
+  width: 263px;
+  height: 481px;
+  background-color: #f7fafc; }
+
+.price-block__select_b {
+  width: 100%;
+  height: 50px; }
+
+.price-block__price {
+  width: 100%;
+  height: 85px;
+  background: #fff;
+  position: relative;
+  font-family: Dosis, sans-serif;
+  color: #333333;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.price-block__price:before,
+.price-block__price:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 0;
+  border-left: 131.5px solid transparent;
+  border-right: 131.5px solid transparent; }
+
+.price-block__price:after {
+  bottom: -45px;
+  border-top: 45px solid #fff; }
+
+.price-block__select_b {
+  font-family: Dosis, sans-serif;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: capitalize;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.price-block__price_usd {
+  font-size: 22px;
+  margin-top: -20px; }
+
+.price-block__price_m {
+  font-size: 22px;
+  margin-top: 20px; }
+
+.price-block__price_position {
+  padding-top: 20px;
+  display: inline-block; }
+
+.price-block__all_textbox {
+  margin: 80px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.price-block__all_texts {
+  font-family: Roboto, sans-serif;
+  color: #777777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 30px;
+  border-bottom: dashed #eee 1px;
+  width: 202px;
+  text-align: center; }
+  .price-block__all_texts:last-child {
+    border-bottom: none; }
+  .price-block__all_texts:nth-child(4) {
+    border-bottom: none; }
+
+.price-block__all_textbot {
+  font-family: Roboto, sans-serif;
+  color: #aaaaaa;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 23.953px;
+  margin: 50px 0 0 0; }
+
+.price-block__select_button a {
+  font-family: Roboto, sans-serif;
+  color: #333333;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23.953px;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 12px 42px;
+  background-color: #fff;
+  border-radius: 25px;
+  margin: 4px 0 0 0;
+  display: inline-block; }
+  .price-block__select_button a:hover {
+    background: linear-gradient(90deg, #fd7228, #f3187b);
+    color: #fff; }
+
+.price-block__price2 {
+  background: url("../img/background-price.png") no-repeat;
+  width: 100%;
+  height: 120px;
+  position: relative;
+  font-family: Dosis, sans-serif;
+  color: #fff;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.price-block__all_textbox2 {
+  margin: 43px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.price-block__price_position2 {
+  padding-bottom: 20px;
+  display: inline-block; }
+
+.price-block__select_button2 a {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23.953px;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 12px 42px;
+  background: linear-gradient(90deg, #fd7228, #f3187b);
+  color: #fff;
+  border-radius: 25px;
+  margin: 4px 0 0 0;
+  display: inline-block; }
+
+/*/price-block*/
+/*video-block*/
+/*/video-block*/
+/*reviews-block*/
+.reviews-block {
+  height: 693px; }
+
+.reviews-block-caption {
+  font-family: Dosis, sans-serif;
+  color: #222222;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 120px; }
+
+.reviews-block-text {
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  color: #777777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-top: 40px;
+  max-width: 660px;
+  margin-left: auto;
+  margin-right: auto; }
+
+/*/reviews-block*/
+/*giantapp-block*/
+.giant-block {
+  height: 470px;
+  background: linear-gradient(90deg, #fd7228, #f3187b); }
+
+.giant-block__caption {
+  font-family: Dosis, sans-serif;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+  padding-top: 120px;
+  text-transform: capitalize; }
+
+.giant-block__icon_caption {
+  font-family: Dosis, sans-serif;
+  color: #222222;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: capitalize;
+  margin: 30px 0 0 19px;
+  display: inline-block;
+  text-decoration: none; }
+  .giant-block__icon_caption:hover {
+    color: #f31f79; }
+
+.giant-block__icon_text {
+  font-family: Roboto, sans-serif;
+  color: #777777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 10px 0 0 19px; }
+
+.giant-block__icon {
+  width: 360px;
+  height: 115px;
+  background-color: #fff;
+  display: flex; }
+
+.giant-block__iclink_mac {
+  background-image: url(../img/macicon.png);
+  background-repeat: no-repeat;
+  height: 115px;
+  width: 115px;
+  background-color: #f7fafc;
+  background-position: 24px 24px; }
+
+.giant-block__iclink_android {
+  background-image: url(../img/androidIcon.png);
+  background-repeat: no-repeat;
+  height: 115px;
+  width: 115px;
+  background-color: #f7fafc;
+  background-position: 22px 24px; }
+
+.giant-block__iclink_windows {
+  background-image: url(../img/windowsIcon.png);
+  background-repeat: no-repeat;
+  height: 115px;
+  width: 115px;
+  background-color: #f7fafc;
+  background-position: 17px 24px; }
+
+.giant-block_all {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  flex-wrap: wrap; }
+
+/*/giant-block*/
+/*footer-block*/
+.footer-block {
+  background-color: #222;
+  height: 180px; }
+
+.footer-block__social {
+  text-align: center; }
+
+.footer-block__social i {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 36px;
+  margin: 63px 29px 0 0; }
+  .footer-block__social i:last-child {
+    margin-right: 0; }
+  .footer-block__social i:hover {
+    color: #f31f79;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+    cursor: pointer; }
+
+.footer-block__text {
+  font-family: Roboto, sans-serif;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+  margin: 31px 0 0 0; }
+
+/*/footer-block*/
+
+/*# sourceMappingURL=style.css.map */

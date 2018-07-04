@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <title>Lending page</title>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var carousel = $("#carousel").waterwheelCarousel({
+                flankingItems: 3,
+                movingToCenter: function ($item) {
+                    $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
+                },
+                movedToCenter: function ($item) {
+                    $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
+                },
+                movingFromCenter: function ($item) {
+                    $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
+                },
+                movedFromCenter: function ($item) {
+                    $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
+                },
+                clickedCenter: function ($item) {
+                    $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
+                }
+            });
+
+            $('#prev').bind('click', function () {
+                carousel.prev();
+                return false
+            });
+
+            $('#next').bind('click', function () {
+                carousel.next();
+                return false;
+            });
+
+            $('#reload').bind('click', function () {
+                newOptions = eval("(" + $('#newoptions').val() + ")");
+                carousel.reload(newOptions);
+                return false;
+            });
+
+        });
+    </script>
+
+</head>
+<body>
+<header>
+    <div class="content">
+        <div class="header__menu-logo">
+            <div class="header__menu-logo_logo"><a href="#">giant</a></div>
+            <ul class="header__menu-logo_menu">
+                <li><a href="#">home</a></li>
+                <li><a href="#">featuring</a></li>
+                <li><a href="#">pricing</a></li>
+                <li><a href="#">download now</a></li>
+            </ul>
+        </div>
+        <div class="header__content">
+            <div class="header__content_block">
+                <div class="header__content_block_caption">
+                    a powerful & unique app landing template
+                </div>
+                <div class="header__content_block_text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto corporis expedita
+                    fuga
+                    fugit necessitatibus nostrum, nulla omnis pariatur?
+                </div>
+                <div class="header__content_block_lists">
+                    <span class="header__content_block_list">Unlimited colors: banner with images, slider or video</span><br>
+                    <span class="header__content_block_list">Fully Responsive and powered by HTML and CSS3</span><br>
+                    <span class="header__content_block_list">Very easy to customize: set up in minutes</span>
+                </div>
+                <a href="" class="header__content_block_button">start exploring us</a>
+            </div>
+        </div>
+    </div>
+    <div class="header__content_phone"></div>
+</header>
+
+<div class="select__setting">
+    <div class="content">
+        <div class="select__setting_main">
+            <div class="select__setting_block">
+                <i class="fas fa-tag"></i>
+                <div class="select__setting_block_captext">
+                    <div class="select__setting_block_caption">
+                        Sell any product online
+                    </div>
+                    <div class="select__setting_block_text">
+                        Lorem ipsum dolor sit amet, adipisicing elit. Incidunt ipsum iure quasi suscipit.
+                    </div>
+                </div>
+            </div>
+            <div class="select__setting_block">
+                <i class="fas fa-cog"></i>
+                <div class="select__setting_block_captext">
+                    <div class="select__setting_block_caption">
+                        Sell any product online
+                    </div>
+                    <div class="select__setting_block_text">
+                        Lorem ipsum dolor sit, consectetur adipisicing elit. ipsum iure quasi suscipit.
+                    </div>
+                </div>
+            </div>
+            <div class="select__setting_block">
+                <i class="fas fa-paint-brush"></i>
+                <div class="select__setting_block_captext">
+                    <div class="select__setting_block_caption">
+                        Sell any product online
+                    </div>
+                    <div class="select__setting_block_text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing. Incidunt ipsum quasi suscipit.
+                    </div>
+                </div>
+            </div>
+            <div class="select__setting_block">
+                <i class="fas fa-fire-extinguisher"></i>
+                <div class="select__setting_block_captext">
+                    <div class="select__setting_block_caption">
+                        Sell any product online
+                    </div>
+                    <div class="select__setting_block_text">
+                        Lorem ipsum dolor sit amet, consectetur elit. Incidunt ipsum iure quasi suscipit.
+                    </div>
+                </div>
+            </div>
+            <div class="select__setting_block">
+                <i class="fas fa-file"></i>
+                <div class="select__setting_block_captext">
+                    <div class="select__setting_block_caption">
+                        Sell any product online
+                    </div>
+                    <div class="select__setting_block_text">
+                        Lorem ipsum dolor amet, consectetur adipisicing elit. Incidunt ipsum iure quasi.
+                    </div>
+                </div>
+            </div>
+            <div class="select__setting_block">
+                <i class="far fa-life-ring"></i>
+                <div class="select__setting_block_captext">
+                    <div class="select__setting_block_caption">
+                        Sell any product online
+                    </div>
+                    <div class="select__setting_block_text">
+                        Lorem dolor sit amet, consectetur adipisicing elit. Incidunt ipsum iure quasi suscipit.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="select__setting_line"></div>
+    </div>
+</div>
+
+<div class="phone-present">
+    <div class="content">
+        <div class="phone-present__content">
+            <div class="phone-present__content_text">
+                <div class="phone-present__content_text_caption">
+                    We don't leave you stranded
+                </div>
+                <div class="phone-present__content_textes">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id ipsam molestiae qui ullam unde?
+                    Consectetur corporis eos ex fugit magnam reiciendis temporibus.
+                    <div class="phone-present__content_textes_block">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, ad aliquam cum dolorem placeat
+                        provident quas quo tenetur ut veritatis! Assumenda cum dolorem eos esse incidunt iusto neque
+                        numquam, unde.
+                    </div>
+                </div>
+                <div class="phone-present__content_text_gal">
+                    <span class="phone-present__content_text_gal_list">Unlimited colors: banner with images, slider or video</span><br>
+                    <span class="phone-present__content_text_gal_list">Fully Responsive and powered by HTML and CSS3</span><br>
+                    <span class="phone-present__content_text_gal_list">Very easy to customize: set up in minutes</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="screenshots-slide">
+    <div class="content">
+        <div class="screenshots-slide__caption">
+            Lorem ipsum dolor sit amet, consectetur adipisicing.
+        </div>
+        <div class="screenshots-slide__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque deleniti, ducimus eum excepturi
+            facilis molestias officiis quam quisquam reprehenderit rerum soluta sunt, veritatis voluptate!
+        </div>
+        <div class="screenshots-slide__carusel">
+            <div id="carousel">
+                <a href="#"><img src="images/1.png" id="item-1"/></a>
+                <a href="#"><img src="images/2.png" id="item-2"/></a>
+                <a href="#"><img src="images/3.png" id="item-3"/></a>
+                <a href="#"><img src="images/4.png" id="item-4"/></a>
+                <a href="#"><img src="images/5.png" id="item-5"/></a>
+                <a href="#"><img src="images/6.png" id="item-6"/></a>
+                <a href="#"><img src="images/7.png" id="item-7"/></a>
+            </div>
+            <a href="#" id="prev"><i class="fas fa-arrow-left"></i></a><a href="#" id="next"><i
+                class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</div>
+
+<div class="price-block">
+    <div class="content">
+        <div class="price-block__caption">
+            Lorem ipsum dolor sit amet, consectetur adipisicing.
+        </div>
+        <div class="price-block__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque deleniti, ducimus eum excepturi
+            facilis molestias officiis quam quisquam reprehenderit rerum soluta sunt, veritatis voluptate!
+        </div>
+        <div class="price-block__all">
+            <div class="price-block__select">
+                <div class="price-block__select_b">
+                    basic
+                </div>
+                <div class="price-block__price">
+                    <span class="price-block__price_usd price-block__price_position"><sup>$</sup></span><span
+                        class="price-block__price_p price-block__price_position">12.0</span><span
+                        class="price-block__price_m price-block__price_position">/m</span>
+                </div>
+                <div class="price-block__all_textbox">
+                    <div class="price-block__all_texts">
+                        lorem
+                    </div>
+                    <div class="price-block__all_texts">
+                        lorem
+                    </div>
+                    <div class="price-block__all_texts">
+                        lorem
+                    </div>
+                    <div class="price-block__all_texts">
+                        lorem
+                    </div>
+                    <div class="price-block__all_textbot">
+                        lorem
+                    </div>
+                    <div class="price-block__select_button">
+                        <a href="#">buy now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="price-block__select">
+                <div class="price-block__select_b">
+                    standart
+                </div>
+                <div class="price-block__price2">
+                    <span class="price-block__price_usd price-block__price_position2"><sup>$</sup></span><span
+                        class="price-block__price_p price-block__price_position2">24.0</span><span
+                        class="price-block__price_m price-block__price_position2">/m</span>
+                </div>
+                <div class="price-block__all_textbox2">
+                    <div class="price-block__all_texts">
+                        lorem
+                    </div>
+                    <div class="price-block__all_texts">
+                        lorem
+                    </div>
+                    <div class="price-block__all_texts">
+                        lorem
+                    </div>
+                    <div class="price-block__all_texts">
+                        lorem
+                    </div>
+                    <div class="price-block__all_textbot">
+                        lorem
+                    </div>
+                    <div class="price-block__select_button2">
+                        <a href="#">buy now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="price-block__select">
+                <div class="price-block__select_b">
+                    premium
+                </div>
+                <div class="price-block__price">
+                    <span class="price-block__price_usd price-block__price_position"><sup>$</sup></span><span
+                        class="price-block__price_p price-block__price_position">250.0</span><span
+                        class="price-block__price_m price-block__price_position">/m</span>
+                </div>
+                <div class="price-block__all_textbox">
+                    <div class="price-block__all_texts">
+                        lorem
+                    </div>
+                    <div class="price-block__all_texts">
+                        lorem
+                    </div>
+                    <div class="price-block__all_texts">
+                        lorem
+                    </div>
+                    <div class="price-block__all_texts">
+                        lorem
+                    </div>
+                    <div class="price-block__all_textbot">
+                        lorem
+                    </div>
+                    <div class="price-block__select_button">
+                        <a href="#">buy now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="price-block__select">
+                <div class="price-block__select_b">
+                    enterprise
+                </div>
+                <div class="price-block__price">
+                    <span class="price-block__price_usd price-block__price_position"><sup>$</sup></span><span
+                        class="price-block__price_p price-block__price_position">999.0</span><span
+                        class="price-block__price_m price-block__price_position">/m</span>
+                </div>
+                <div class="price-block__all_textbox">
+                    <div class="price-block__all_texts">
+                        lorem
+                    </div>
+                    <div class="price-block__all_texts">
+                        lorem
+                    </div>
+                    <div class="price-block__all_texts">
+                        lorem
+                    </div>
+                    <div class="price-block__all_texts">
+                        lorem
+                    </div>
+                    <div class="price-block__all_textbot">
+                        lorem
+                    </div>
+                    <div class="price-block__select_button">
+                        <a href="#">buy now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="video-block">
+    <iframe width="100%" id="ytplayer" type="text/html" height="400"
+            src="https://www.youtube.com/embed/D5anNTxjwS0?controls=0&enablejsapi=1&modestbranding=1&playsinline=1&showinfo=0"
+            frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div class="reviews-block">
+    <div class="content">
+        <div class="reviews-block-caption">
+            What our customers are saying
+        </div>
+        <div class="reviews-block-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque deleniti, ducimus eum excepturi
+            facilis molestias officiis quam quisquam reprehenderit rerum soluta sunt, veritatis voluptate!
+        </div>
+    </div>
+</div>
+
+<div class="giant-block">
+    <div class="content">
+        <div class="giant-block__caption">
+            download giant app now
+        </div>
+        <div class="giant-block_all">
+            <div class="giant-block__icon">
+                <div class="giant-block__iclink_mac">
+                </div>
+                <div class="giant-block__icon_link">
+                    <a class="giant-block__icon_caption" href="#">
+                        download
+                    </a>
+                    <div class="giant-block__icon_text">
+                        download from app store
+                    </div>
+                </div>
+            </div>
+            <div class="giant-block__icon">
+                <div class="giant-block__iclink_android">
+                </div>
+                <div class="giant-block__icon_link">
+                    <a class="giant-block__icon_caption" href="#">
+                        download
+                    </a>
+                    <div class="giant-block__icon_text">
+                        download from app store
+                    </div>
+                </div>
+            </div>
+            <div class="giant-block__icon">
+                <div class="giant-block__iclink_windows">
+                </div>
+                <div class="giant-block__icon_link">
+                    <a class="giant-block__icon_caption" href="#">
+                        download
+                    </a>
+                    <div class="giant-block__icon_text">
+                        download from app store
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer-block">
+    <div class="content">
+        <div class="footer-block__social">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-vk"></i>
+        </div>
+        <div class="footer-block__text">
+            Copyright &copy; 2017 | UXSEVEN - a sister concern of codepixar.com
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
